@@ -30,7 +30,7 @@ def valid_phone_number?(phone)
     #first capture group returns 3 numbers that are inside of parenthesis
     #second capture group checks for 3 numbers followed by a dash, follwed by four numbers
   #third: tests to see if there are 7 numbers in a row
-  if phone.match(/([0-9] ?){10}/) || phone.match(/\b(\([0-9]{3}\)([0-9]{3}-[0-9]{4})\b)/) || phone.match(/\b([0-9]{7})\b/)
+  if phone.match(/([0-9] ?){10}/) || phone.match(/(\([0-9]{3}\)([0-9]{3}-[0-9]{4})\b)/) || phone.match(/\b([0-9]{7})\b/)
     true
   else
     false
